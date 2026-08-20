@@ -4,8 +4,24 @@
  */
 
 require('dotenv').config();
+const path = require('path');
 
 module.exports = {
+    // Paths Configuration
+    paths: {
+        root: process.cwd(),
+        commands: path.join(process.cwd(), 'commands'),
+        events: path.join(process.cwd(), 'events'),
+        handlers: path.join(process.cwd(), 'handlers'),
+        managers: path.join(process.cwd(), 'managers'),
+        database: path.join(process.cwd(), 'database'),
+        utils: path.join(process.cwd(), 'utils'),
+        config: path.join(process.cwd(), 'config'),
+        emojis: path.join(process.cwd(), 'emojis'),
+        logs: path.join(process.cwd(), 'logs'),
+        assets: path.join(process.cwd(), 'assets')
+    },
+
     // Discord Configuration
     token: process.env.BOT_TOKEN,
     clientId: process.env.CLIENT_ID,

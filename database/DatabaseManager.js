@@ -3,7 +3,7 @@
  * Handles all database operations with SQL middleware
  */
 
-const sqlite3 = require('sqlite3').verbose();
+const Database = require('better-sqlite3');
 const path = require('path');
 const config = require('../config/config');
 

@@ -2,10 +2,10 @@
   "name": "enterprise-music-bot",
   "version": "1.0.0",
   "description": "Enterprise-grade Discord Music Bot with Kazagumo, Shoukaku, and Lavalink v4",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
     "lint": "eslint . --ext .js"
   },
   "keywords": [
@@ -21,10 +21,9 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
-    "sqlite3": "^5.1.7",
-    "kazagumo": "^2.8.0",
+    "better-sqlite3": "^9.2.2",
+    "kazagumo": "^3.4.0",
     "shoukaku": "^3.4.0",
-    "discord-player": "^6.6.5",
     "@discordjs/voice": "^0.16.1",
     "@discordjs/rest": "^2.2.0",
     "libsodium-wrappers": "^0.7.13",
